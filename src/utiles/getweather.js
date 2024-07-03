@@ -12,7 +12,6 @@ function getweatherstack (lat,log,callback){
         }else{
             // console.log(response.body.current)
             // console.log(`${response.body.current.weather_descriptions[0]}, current temp ${response.body.current.temperature} but it feelslike ${response.body.current.feelslike}`)
-
             callback(undefined,`${body.current.weather_descriptions[0]}, current temp ${body.current.temperature}C but it feelslike ${body.current.feelslike}C` )
         }
 

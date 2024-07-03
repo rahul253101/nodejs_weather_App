@@ -1,10 +1,13 @@
+// to call required functions
 const getgeocode = require('./utiles/getgeocode.js')
 const getweather = require('./utiles/getweather.js')
 
+// to call modules that we have installed
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 
+// to create a instance of express
 const app = express()
 
 

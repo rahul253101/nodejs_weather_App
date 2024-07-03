@@ -1,5 +1,3 @@
-console.log('in')
-
 const forecast = document.querySelector('#forecast')
 const address = document.querySelector('#address')
 const form = document.querySelector('form')
