@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #333333;
+    margin-right: auto ;
+    max-width: 650px ;
+    margin-left: auto ;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bodyContext{
+    flex-grow: 1;
+}
+
+.profileImage {
+    width: 250px;
+}
+
+footer {
+    color: #888888;
+    margin-top: 20px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 16px ;
+    padding-bottom: 16px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 5px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+header a {
+    text-decoration: none;
+    color: #888888;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #888888;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #888888;
+    color: white;
+    background-color: #888888;
+
+}
