@@ -6,10 +6,11 @@ const getweather = require('./utiles/getweather.js')
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
+const exphbs  = require('express-handlebars');
 
 // to create a instance of express
 const app = express()
-
+const port = process.env.PORT || 3000
 
 const publicFileDir = path.join(__dirname, '../public')
 const viewFileDir = path.join(__dirname, '../templates/views')
@@ -24,6 +25,8 @@ hbs.registerPartials(partialsFirDir)
 
 // this helps the express to acess the static files
 app.use(express.static(publicFileDir))
+
+
 
 
 // the above code up helps to search for a default page while running a server as index is special name which is loded
@@ -96,6 +99,6 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('server is up end running')
+app.listen(port, ()=>{
+    console.log(`server is up end running ${port}`)
 })
