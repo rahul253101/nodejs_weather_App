@@ -5,7 +5,7 @@ const data = document.querySelector('input')
 form.addEventListener('submit', (event)=>{
     event.preventDefault()
     if (data.value){
-        fetch(`http://localhost:3000/weather?address=${data.value}`).then((response)=>{
+        fetch(`/weather?address=${data.value}`).then((response)=>{
         address.innerHTML = 'Loding...'
         response.json().then((data)=>{
             if(data.error){
