@@ -9,7 +9,7 @@ const hbs = require('hbs')
 
 // to create a instance of express
 const app = express()
-
+const port = process.env.PORT || 3000
 
 const publicFileDir = path.join(__dirname, '../public')
 const viewFileDir = path.join(__dirname, '../templates/views')
@@ -96,6 +96,6 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('server is up end running')
+app.listen(port, ()=>{
+    console.log(`server is up end running ${port}`)
 })
